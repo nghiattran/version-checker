@@ -39,7 +39,7 @@ vercheck.check_prefix_packages().then(function(report){
 
 ## Contributing
 
-Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/jonschlinkert/global-paths/issues/new).
+Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/nghiattran/version-checker/issues/new).
 
 ## Author
 
