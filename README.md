@@ -1,5 +1,6 @@
-# version-checker [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
-> version-checker
+# version-checker [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] 
+
+> Check for outdated and lastest node packages.
 
 ## Installation
 
@@ -7,10 +8,50 @@
 $ npm install --save version-checker
 ```
 
+## Usage
+
+```js
+var vercheck = require('version-checker');
+
+vercheck.check_local_packages().then(function(report){
+	// "report" contains all:
+	// 1. Package names
+	// 2. Local version
+	// 3. Available version specified in package.json
+	// 4. Latest version on www.npmjs.com
+})
+
+vercheck.check_global_packages().then(function(report){
+	// "report" contains all:
+	// 1. Package names
+	// 2. Local version
+	// 3. Latest version on www.npmjs.com
+})
+
+vercheck.check_prefix_packages().then(function(report){
+	// "report" contains all:
+	// 1. Package names
+	// 2. Local version
+	// 3. Latest version on www.npmjs.com
+})
+
+```
+
+## Contributing
+
+Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/nghiattran/version-checker/issues/new).
+
+## Author
+
+**Nghia Tran**
+
++ [github/nghiattran](https://github.com/nghiattran)
+
 ## License
 
 MIT © [NghiaTTran]()
 
+<!-- [![Coverage percentage][coveralls-image]][coveralls-url] -->
 
 [npm-image]: https://badge.fury.io/js/version-checker.svg
 [npm-url]: https://npmjs.org/package/version-checker
