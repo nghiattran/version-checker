@@ -1,6 +1,6 @@
 {
-  "name": "node-vercheck",
-  "version": "0.0.0",
+  "name": "version-checker",
+  "version": "0.1.0",
   "description": "Node version checker",
   "homepage": "",
   "author": {
@@ -18,7 +18,7 @@
   "keywords": [
     "version",
     "checker",
-    "vercheck",
+    "vercheck"
     "nvc",
     "node-version-checker",
     "node-version"
@@ -45,7 +45,7 @@
     "jshint": "^2.9.1",
     "jshint-stylish": "^2.1.0"
   },
-  "repository": "nghiattran/node-vercheck",
+  "repository": "nghiattran/version-checker",
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp"

@@ -5,7 +5,7 @@
 ## Installation
 
 ```sh
-$ npm install -g version-checker
+$ npm install --save vercheck
 ```
 
 ## Usage
@@ -33,4 +33,4 @@ MIT © [NghiaTTran]()
 [daviddm-image]: https://david-dm.org/nghiattran/version-checker.svg?theme=shields.io
 [daviddm-url]: https://david-dm.org/nghiattran/version-checker
 [coveralls-image]: https://coveralls.io/repos/nghiattran/version-checker/badge.svg
-[coveralls-url]: https://coveralls.io/r/nghiattran/version-checker
+[coveralls-url]: https://coveralls.io/r/nghiattran/version-checkerker
