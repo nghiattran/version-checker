@@ -5,20 +5,47 @@
 ## Installation
 
 ```sh
-$ npm install --save vercheck
+$ npm install --save version-checker
 ```
 
 ## Usage
 
-```sh
-$ vc
+```js
+var vercheck = require('version-checker');
+
+vercheck.check_local_packages().then(function(report){
+	// "report" contains all:
+	// 1. Package names
+	// 2. Local version
+	// 3. Available version specified in package.json
+	// 4. Latest version on www.npmjs.com
+})
+
+vercheck.check_global_packages().then(function(report){
+	// "report" contains all:
+	// 1. Package names
+	// 2. Local version
+	// 3. Latest version on www.npmjs.com
+})
+
+vercheck.check_prefix_packages().then(function(report){
+	// "report" contains all:
+	// 1. Package names
+	// 2. Local version
+	// 3. Latest version on www.npmjs.com
+})
+
 ```
 
-## Options
+## Contributing
 
-```sh
-$ vc -h
-```
+Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/jonschlinkert/global-paths/issues/new).
+
+## Author
+
+**Nghia Tran**
+
++ [github/nghiattran](https://github.com/nghiattran)
 
 ## License
 
@@ -33,4 +60,4 @@ MIT © [NghiaTTran]()
 [daviddm-image]: https://david-dm.org/nghiattran/version-checker.svg?theme=shields.io
 [daviddm-url]: https://david-dm.org/nghiattran/version-checker
 [coveralls-image]: https://coveralls.io/repos/nghiattran/version-checker/badge.svg
-[coveralls-url]: https://coveralls.io/r/nghiattran/version-checkerker
+[coveralls-url]: https://coveralls.io/r/nghiattran/version-checker
