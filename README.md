@@ -19,6 +19,8 @@ vercheck.check_local_packages().then(function(report){
 	// 2. Local version
 	// 3. Available version specified in package.json
 	// 4. Latest version on www.npmjs.com
+}, function(error){
+	// error handler
 })
 
 vercheck.check_global_packages().then(function(report){
@@ -26,6 +28,8 @@ vercheck.check_global_packages().then(function(report){
 	// 1. Package names
 	// 2. Local version
 	// 3. Latest version on www.npmjs.com
+}, function(error){
+	// error handler
 })
 
 vercheck.check_prefix_packages().then(function(report){
@@ -33,8 +37,28 @@ vercheck.check_prefix_packages().then(function(report){
 	// 1. Package names
 	// 2. Local version
 	// 3. Latest version on www.npmjs.com
+}, function(error){
+	// error handler
 })
 
+```
+
+### Return format
+
+```
+├── fullfilled							// Packages that are found on www.npmjs.com
+│   ├── pro								// Packages that are installed with '--save'
+│   │   ├── package 1
+│   │   ├── package 2
+│   │   ...
+│   ├── dev								// Packages that are installed with '--save-dev'
+│   │   ├── package 1
+│   │   ├── package 2
+│   	...
+├── error								// Packages that are not found on www.npmjs.com
+│   ├── package 1
+│   ├── package 2
+	....
 ```
 
 ## Contributing
